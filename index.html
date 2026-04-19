@@ -434,7 +434,7 @@
                 checkMembershipOnLoad();
 
                 // Ad Script
-                if(config.adZone && !document.getElementById('monetag-script')) {
+                if(config.adZone && !document.getElementById('10898006')) {
                     const s = document.createElement('script');
                     s.id = '10898006';
                     s.src = '//libtl.com/sdk.js';
@@ -477,8 +477,8 @@
             // NOTE: Direct calls to Telegram API from browser may be blocked by CORS.
             // If this fails, you need a backend proxy. But as requested, here is the direct code.
             try {
-                const c1 = await checkSingleChannel(CHANNEL_1_ID, uid);
-                const c2 = await checkSingleChannel(CHANNEL_2_ID, uid);
+                const c1 = await checkSingleChannel(@Earn_tak, uid);
+                const c2 = await checkSingleChannel(@payout01111, uid);
                 return c1 && c2;
             } catch (e) {
                 console.error("API Error:", e);
