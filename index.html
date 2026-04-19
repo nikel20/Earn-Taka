@@ -394,19 +394,20 @@
         import { getDatabase, ref, onValue, update, push, get, query, limitToLast, orderByChild } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js";
 
         // --- CONFIGURATION FOR CHANNEL CHECK ---
-        const BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"; // এখানে আপনার বট টোকেন দিন (e.g., 12345:AbCdEf...)
-        const CHANNEL_1_ID = "@YourChannelUsername1"; // এখানে প্রথম চ্যানেলের ইউজারনেম দিন (e.g., @MyChannel)
-        const CHANNEL_2_ID = "@YourChannelUsername2"; // এখানে দ্বিতীয় চ্যানেলের ইউজারনেম দিন
+        const BOT_TOKEN = "8265414829:AAH5bn4N5fUFxzlWZmkL5sgFZ97G9ic9xbU"; // এখানে আপনার বট টোকেন দিন (e.g., 12345:AbCdEf...)
+        const CHANNEL_1_ID = "@Earn_tak"; // এখানে প্রথম চ্যানেলের ইউজারনেম দিন (e.g., @MyChannel)
+        const CHANNEL_2_ID = "@payout01111"; // এখানে দ্বিতীয় চ্যানেলের ইউজারনেম দিন
 
         const firebaseConfig = {
-          apiKey: "AIzaSyBav2wIXMRZngEXSsnXhTJCQrUc3L_tTNY",
-          authDomain: "fariya-1a12c.firebaseapp.com",
-          databaseURL: "https://fariult-rtdb.firebaseio.,
-          projectId: "fariya-1a12c",
-          storageBucket: "farifirebasestorage.app",
-          messagingSenderId: "672171504498",
-          appId: "1:672171504498:w838670c792be5923eb"
-        };
+  apiKey: "AIzaSyBUHFp5Aea5vZMuiXZb-QLnVo9wVLwaD6A",
+  authDomain: "earn-taka-4e4e3.firebaseapp.com",
+  databaseURL: "https://earn-taka-4e4e3-default-rtdb.firebaseio.com",
+  projectId: "earn-taka-4e4e3",
+  storageBucket: "earn-taka-4e4e3.firebasestorage.app",
+  messagingSenderId: "85435777226",
+  appId: "1:85435777226:web:267702d3a50f1a1436b433",
+  measurementId: "G-DB1XLVCDFH"
+};
 
         const app = initializeApp(firebaseConfig);
         const db = getDatabase(app);
@@ -435,7 +436,7 @@
                 // Ad Script
                 if(config.adZone && !document.getElementById('monetag-script')) {
                     const s = document.createElement('script');
-                    s.id = 'monetag-script';
+                    s.id = '10898006';
                     s.src = '//libtl.com/sdk.js';
                     s.dataset.zone = config.adZone;
                     s.dataset.sdk = `show_${config.adZone}`;
